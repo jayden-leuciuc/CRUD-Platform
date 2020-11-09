@@ -7,7 +7,7 @@ const app = express();
 
 require('dotenv/config');
 
-mongoose.connect(process.env.DB_CONNECTION, 
+mongoose.connect("mongodb+srv://Admin:1234@cluster0.cflnz.mongodb.net/blog?retryWrites=true&w=majority", 
 { useUnifiedTopology: true , useNewUrlParser: true, useCreateIndex: true }, () => console.log('DB Connected'));
 
 
