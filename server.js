@@ -7,7 +7,7 @@ const app = express();
 
 require('dotenv/config');
 
-mongoose.connect("mongodb+srv://Admin:1234@cluster0.cflnz.mongodb.net/blog?retryWrites=true&w=majority", 
+mongoose.connect(process.env.DB_CONNECTION, 
 { useUnifiedTopology: true , useNewUrlParser: true, useCreateIndex: true }, () => console.log('DB Connected'));
 
 
@@ -23,6 +23,6 @@ app.get('/', async (req,res) => {
 });
 
 app.use('/articles',articleRouter);
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {console.log(`Server started`)});
