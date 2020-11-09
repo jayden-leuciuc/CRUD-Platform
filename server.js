@@ -23,5 +23,6 @@ app.get('/', async (req,res) => {
 });
 
 app.use('/articles',articleRouter);
-const port = process.env.port || 5000;
+const port = 5000;
+
 app.listen(port, () => {console.log(`Server started`)});

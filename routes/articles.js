@@ -1,5 +1,5 @@
 const express = require('express');
-const Article = require('./../models/article');
+const Article = require('../models/article');
 const router = express.Router();
 
 //If you were to put '/test' the file path would be /articles/test
@@ -54,4 +54,5 @@ function saveArticleAndRedirect(path) {
 		}
 	};
 }
+
 module.exports = router;
