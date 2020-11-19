@@ -9,5 +9,5 @@ I learned about get, post, and other requests. I also learned how to connect to 
 # Technology used:
 Html, Express, Node, Git
 # Hosted:
-https://crud-blog-0.herokuapp.com
+View the hosted project here: [Click Here](https://crud-blog-0.herokuapp.com)
 
